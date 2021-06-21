@@ -26,6 +26,10 @@ task("accounts", "Prints the list of accounts", async () => {
     hardhat: {
       chainId: 1337
     },
+    goreli: {
+      url: 'https://goerli.infura.io/v3/9e456c5e987747e6bd4a2f05ebec39b3',
+      accounts: [`0x${process.env.PRIVATE_KEY}`]
+    }
   },
   solidity: "0.8.3"
 };
