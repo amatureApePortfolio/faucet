@@ -14,7 +14,7 @@ async function main() {
   );
 
   const FCTToken = await hre.ethers.getContractFactory("FCTToken");
-  const fctToken = await FCCToken.deploy("FCTToken", "TKN");
+  const fctToken = await FCTToken.deploy("FCTToken", "TKN");
 
   await fctToken.deployed();
 
